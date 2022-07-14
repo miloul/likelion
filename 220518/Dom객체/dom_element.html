@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="text" id="userid" />
+    <p>HTML요소에 대한 접근</p>
+    <p>태그명을 사용해서 HTML 요소를 찾습니다. document.getElementById</p>
+    <p class="para">HTML요소에 대한 접근</p>
+    <p class="para">
+      클래스명을 사용해서 HTML 요소를 찾습니다. document.getElementsByClassName
+    </p>
+    <script>
+      var element = document.getElementById("userid");
+      console.log(element);
+      var tagElement = document.getElementsByTagName("p");
+      console.log(tagElement);
+      var clElement = document.getElementsByClassName("para");
+      console.log(clElement);
+    </script>
+  </body>
+</html>

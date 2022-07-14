@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button onclick="myFunction();">클릭</button>
+    <button id="btn">클릭</button>
+    <button id="btn2">클릭</button>
+
+    <!-- change -->
+    <select id="select1" onchange="doChange();">
+      <option value="KO">Korea</option>
+      <option value="CN">China</option>
+      <option value="JP">Japan</option>
+    </select>
+
+    <!-- focus -->
+    <input type="text" id="text1" onfocus="doFocus();">
+    <script>
+      function myFunction(){
+        console.log("onclick event occur");
+      }
+
+      document.getElementById("btn").addEventListener("click", myFunction);
+      document.getElementById("btn2").addEventListener("click", function(){
+        console.log("event function");
+      });
+
+      function doChange(){
+        let selectValue = document.getElementById("select1").value;
+        console.log(selectValue)
+      };
+
+      function doFocus() {
+        console.log("focus event occur");
+      }
+    </script>
+  </body>
+</html>

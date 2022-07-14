@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>계산기</title>
+  <script src="./scripts.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="calculatorInputTwo">
+    <h1>CALCULATOR_TWO_INPUT</h1>
+    <span>Enter First Value : </span>
+    <input class="num1" type="number" value="0" />
+    <br>
+    <span>Enter Second Value : </span>
+    <input class="num2" type="number" value="0" />
+    <br>
+    <span>result : </span>
+    <span class="print"></span>
+    <br><br>
+    <button onclick="calculatorInputTwo('plus')">더하기</button>
+    <button onclick="calculatorInputTwo('minus')">빼기</button>
+    <button onclick="calculatorInputTwo('multiply')">곱하기</button>
+    <button onclick="calculatorInputTwo('divide')">나누기</button>
+    <button onclick="calculatorInputTwo('remain')">나머지</button>
+    <button onclick="calculatorInputTwo('involution')">거듭제곱</button>
+  </div>
+  <div id="calculatorInputOne">
+    <h1>CALCULATOR_ONE_INPUT</h1>
+    <span>Enter First Value : </span>
+    <input class="num" type="number" value="0" />
+    <br>
+    <span>result : </span>
+    <span class="print"></span>
+    <br><br>
+    <button onclick="calculatorInputOne('factorial')">팩토리얼</button>
+    <button onclick="calculatorInputOne('fibonacci')">피보나치</button>
+    <button onclick="calculatorInputOne('primeNumber')">소수확인</button>
+    +보너스
+    <button onclick="calculatorInputOne('luckyNumber')">행운의번호</button>
+  </div>
+</body>
+
+</html>

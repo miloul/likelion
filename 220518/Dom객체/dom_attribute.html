@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="text1" value="ABC" data-role="name" />
+    <br />
+    <button onclick="doSave(event);">저장</button>
+
+    <br>
+    <a id="myAnchor">Go to google</a>
+    <button onclick="myFunction()">Try</button>
+
+    <script>
+      var text = document.getElementById("text1");
+      var textValue = text.value;
+      console.log(textValue);
+      console.log(document.getElementById("text1").getAttribute("value"));
+      
+      console.log(text.hasAttribute("value"));
+      console.log(text.hasAttribute("data-role"));
+
+      text.removeAttribute("data-role");
+      console.log(text.hasAttribute("data-role"));
+
+      function myFunction(){
+        document.getElementById("myAnchor").setAttribute("href","https://www.google.com") //어떤 속성, 속성값
+      }
+    </script>
+  </body>
+</html>
